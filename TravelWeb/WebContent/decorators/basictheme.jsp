@@ -46,7 +46,15 @@ h1,h2,h3,h4 {
 		SiteMesh example site:
 		<decorator:title />
 	</h1>
+	
+	<div class ='banner'>
 
+	</div>
+	
+	<div class ='menu'>
+
+	</div>
+	 
 	<div class='mainBody'>
 		<decorator:body />
 	</div>
