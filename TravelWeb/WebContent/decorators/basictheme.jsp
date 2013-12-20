@@ -1,14 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<?xml version="1.0" encoding="UTF-8" ?>
+<%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator" prefix="decorator" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%@ page language="java" pageEncoding="UTF-8"%>
-
 <%@ page contentType="text/html;charset= UTF-8"%>
-<html>
-
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="css/index.css">
-<title>SiteMesh example: <sitemesh:write property='title' /></title>
+<title>SiteMesh example: <decorator:title /></title>
 
 <style type='text/css'>
 
@@ -38,18 +37,18 @@ h1,h2,h3,h4 {
 }
 </style>
 
-<sitemesh:write property='head' />
+<decorator:head />
 
 </head>
 
 <body>
 	<h1 class='title'>
 		SiteMesh example site:
-		<sitemesh:write property='title' />
+		<decorator:title />
 	</h1>
 
 	<div class='mainBody'>
-		<sitemesh:write property='body' />
+		<decorator:body />
 	</div>
 
 	<div class='disclaimer'>Site disclaimer. This is an example.</div>
@@ -97,5 +96,4 @@ h1,h2,h3,h4 {
 			src="./img/blank.gif"></img></a>
 	</div>
 </body>
-
 </html>
